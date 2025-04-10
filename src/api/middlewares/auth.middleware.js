@@ -1,5 +1,4 @@
 const e = require('express');
-const { validateToken } = require('../utils/tocken.helper');
 
 const authMiddleware = async (req, res, next) => {
   if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
